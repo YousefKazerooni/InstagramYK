@@ -14,6 +14,7 @@ class InstagramViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +27,8 @@ class InstagramViewController: UIViewController {
     
     @IBAction func onLogOut(sender: AnyObject) {
         PFUser.logOut()
+        //AppDelegate.onLogOut
+       
     }
 
     /*
