@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6AEAC61B1C8566930018063A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC61A1C8566930018063A /* AppDelegate.swift */; };
-		6AEAC61D1C8566930018063A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC61C1C8566930018063A /* ViewController.swift */; };
 		6AEAC6201C8566930018063A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC61E1C8566930018063A /* Main.storyboard */; };
 		6AEAC6221C8566930018063A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC6211C8566930018063A /* Assets.xcassets */; };
 		6AEAC6251C8566930018063A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC6231C8566930018063A /* LaunchScreen.storyboard */; };
 		6AEAC62D1C856E660018063A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC62C1C856E660018063A /* LoginViewController.swift */; };
+		6AEAC62F1C85840C0018063A /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC62E1C85840C0018063A /* InstagramViewController.swift */; };
 		BD2965D9569232DA68095995 /* Pods_InstagramYK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED02ADC6CE04EFE5569D7E3 /* Pods_InstagramYK.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +20,12 @@
 		5ED02ADC6CE04EFE5569D7E3 /* Pods_InstagramYK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramYK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEAC6171C8566930018063A /* InstagramYK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramYK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEAC61A1C8566930018063A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6AEAC61C1C8566930018063A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AEAC61F1C8566930018063A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AEAC6211C8566930018063A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AEAC6241C8566930018063A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AEAC6261C8566930018063A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AEAC62C1C856E660018063A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6AEAC62E1C85840C0018063A /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		AF6C27A6DD4D05FC522C8052 /* Pods-InstagramYK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramYK.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramYK/Pods-InstagramYK.release.xcconfig"; sourceTree = "<group>"; };
 		FD1E2F6A97558A929B3E2A3B /* Pods-InstagramYK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramYK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramYK/Pods-InstagramYK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,12 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				6AEAC61A1C8566930018063A /* AppDelegate.swift */,
-				6AEAC61C1C8566930018063A /* ViewController.swift */,
 				6AEAC61E1C8566930018063A /* Main.storyboard */,
 				6AEAC6211C8566930018063A /* Assets.xcassets */,
 				6AEAC6231C8566930018063A /* LaunchScreen.storyboard */,
 				6AEAC6261C8566930018063A /* Info.plist */,
 				6AEAC62C1C856E660018063A /* LoginViewController.swift */,
+				6AEAC62E1C85840C0018063A /* InstagramViewController.swift */,
 			);
 			path = InstagramYK;
 			sourceTree = "<group>";
@@ -214,8 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEAC62F1C85840C0018063A /* InstagramViewController.swift in Sources */,
 				6AEAC62D1C856E660018063A /* LoginViewController.swift in Sources */,
-				6AEAC61D1C8566930018063A /* ViewController.swift in Sources */,
 				6AEAC61B1C8566930018063A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

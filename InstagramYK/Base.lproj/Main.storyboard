@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="245" y="304"/>
         </scene>
-        <!--View Controller-->
+        <!--Instagram View Controller-->
         <scene sceneID="kkZ-k8-PgB">
             <objects>
-                <viewController id="gb6-Wg-QKd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InstagramViewController" id="gb6-Wg-QKd" customClass="InstagramViewController" customModule="InstagramYK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jAg-7B-bhH"/>
                         <viewControllerLayoutGuide type="bottom" id="fqs-yC-TW1"/>
@@ -73,6 +73,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Er-WX-OHa">
+                                <rect key="frame" x="16" y="28" width="55" height="30"/>
+                                <state key="normal" title="sign out"/>
+                                <connections>
+                                    <action selector="onLogOut:" destination="gb6-Wg-QKd" eventType="touchUpInside" id="DzL-Ws-kAh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
