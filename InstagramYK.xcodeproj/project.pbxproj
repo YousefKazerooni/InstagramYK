@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A391CAD1C8A832B0014E922 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A391CAC1C8A832B0014E922 /* SettingsViewController.swift */; };
 		6AEAC61B1C8566930018063A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC61A1C8566930018063A /* AppDelegate.swift */; };
 		6AEAC6201C8566930018063A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC61E1C8566930018063A /* Main.storyboard */; };
 		6AEAC6221C8566930018063A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC6211C8566930018063A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		5ED02ADC6CE04EFE5569D7E3 /* Pods_InstagramYK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramYK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A391CAC1C8A832B0014E922 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6AEAC6171C8566930018063A /* InstagramYK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramYK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEAC61A1C8566930018063A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AEAC61F1C8566930018063A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				6AEAC62E1C85840C0018063A /* InstagramViewController.swift */,
 				6AEAC62C1C856E660018063A /* LoginViewController.swift */,
+				6A391CAC1C8A832B0014E922 /* SettingsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				6AEAC62F1C85840C0018063A /* InstagramViewController.swift in Sources */,
 				6AEAC62D1C856E660018063A /* LoginViewController.swift in Sources */,
 				6AEAC61B1C8566930018063A /* AppDelegate.swift in Sources */,
+				6A391CAD1C8A832B0014E922 /* SettingsViewController.swift in Sources */,
 				6AEAC6331C892D190018063A /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

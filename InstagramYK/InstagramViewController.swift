@@ -10,6 +10,9 @@ import UIKit
 import Parse
 class InstagramViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var imageDisplayedView: UIView!
+    @IBOutlet weak var captionTextField: UITextField!
+    
     
     
     override func viewDidLoad() {
@@ -54,6 +57,7 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     
+   
     
     
   
@@ -68,6 +72,10 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
             // Dismiss UIImagePickerController to go back to your original view controller
             dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    
+    
     
     /*
     // MARK: - Navigation
