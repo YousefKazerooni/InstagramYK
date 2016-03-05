@@ -8,7 +8,7 @@
 
 import UIKit
 import Parse
-class InstagramViewController: UIViewController {
+class InstagramViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     
@@ -31,6 +31,44 @@ class InstagramViewController: UIViewController {
        
     }
 
+//    @IBAction func onTakePicture(sender: AnyObject) {
+//        
+//        let vc = UIImagePickerController()
+//        vc.delegate = self
+//        vc.allowsEditing = true
+//        vc.sourceType = UIImagePickerControllerSourceType.Camera
+//        
+//        self.presentViewController(vc, animated: true, completion: nil)
+//        
+//    }
+    
+    
+    
+    @IBAction func onChoosing(sender: AnyObject) {
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        vc.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+  
+    
+    func imagePickerController(picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+            let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
+            
+            // Do something with the images (based on your use case)
+            
+            // Dismiss UIImagePickerController to go back to your original view controller
+            dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
