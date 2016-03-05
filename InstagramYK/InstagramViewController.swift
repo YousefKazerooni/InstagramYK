@@ -10,7 +10,8 @@ import UIKit
 import Parse
 class InstagramViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var imageDisplayedView: UIView!
+    
+    @IBOutlet weak var displayedImageView: UIImageView!
     @IBOutlet weak var captionTextField: UITextField!
     
     
@@ -68,13 +69,47 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
             let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
             
             // Do something with the images (based on your use case)
+           displayedImageView.image = editedImage
+           
             
             // Dismiss UIImagePickerController to go back to your original view controller
             dismissViewControllerAnimated(true, completion: nil)
+            
     }
     
     
+  
+    @IBAction func onSubmit(sender: AnyObject) {
+        
+        //Resizing the image, to conform to parse's requirements
+        let newImage = resize(displayedImageView.image!, newSize: CGSize(width: 300, height: 500))
     
+        Post.postUserImage(newImage, withCaption: captionTextField.text!) { (success: Bool, erro: NSError?) -> Void in
+//            code
+            if success{
+                print("Posted")
+                self.displayedImageView.image = nil
+                self.captionTextField.text = nil
+                
+            } else {
+                print("not posted")
+                
+            }
+        }
+        
+    }
+    
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))
+        resizeImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        resizeImageView.image = image
+        
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
     
     
     /*
