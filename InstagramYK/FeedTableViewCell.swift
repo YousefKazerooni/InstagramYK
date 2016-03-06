@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import ParseUI
+import Parse
 
 class FeedTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var photoFromParse: PFImageView!
+    @IBOutlet weak var captionUILabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
