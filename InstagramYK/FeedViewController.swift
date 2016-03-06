@@ -24,31 +24,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-        
-        // construct PFQuery
-        let query = PFQuery(className: "Post")
-        query.orderByDescending("createdAt")
-        query.includeKey("author")
-        query.limit = 20
-        
-        // fetch data asynchronously
-        query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
-            if let posts = posts {
-                // do something with the data fetched
-                print("data fetched")
-                self.photos = posts
-                self.tableView.reloadData()
-            } else {
-                // handle error
-                print ("Error")
-            }
-        }
-        
-        
-
-        
-        
+        parseAPICall()
         
         
     }
@@ -57,6 +33,12 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        parseAPICall()
+    }
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return photos?.count ?? 0
@@ -92,6 +74,28 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
 
+    }
+    
+    
+    func parseAPICall() {
+        // construct PFQuery
+        let query = PFQuery(className: "Post")
+        query.orderByDescending("createdAt")
+        query.includeKey("author")
+        query.limit = 20
+        
+        // fetch data asynchronously
+        query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
+            if let posts = posts {
+                // do something with the data fetched
+                print("data fetched")
+                self.photos = posts
+                self.tableView.reloadData()
+            } else {
+                // handle error
+                print ("Error")
+            }
+        }
     }
     
 
