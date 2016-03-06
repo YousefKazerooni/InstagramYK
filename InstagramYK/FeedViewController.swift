@@ -78,21 +78,17 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //Out of that array I extract "image" and "caption"
         //1- setting the image
-        var instagramPost: PFObject! {
-            didSet {
-                print("did set the image")
-                cell.photoFromParse.file = photo["media"] as? PFFile
-                cell.photoFromParse.loadInBackground()
-            }
-        }
-        
+
+        cell.photoFromParse.file = photo["media"] as? PFFile
+        cell.photoFromParse.loadInBackground()
+
         
         
         //2-setting the caption
         let caption = photo ["caption"] as! String
         cell.captionUILabel.text = caption
         
-        
+ 
         
         return cell
 
