@@ -18,29 +18,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6q-Yb-UUg">
-                                <rect key="frame" x="34" y="45" width="254" height="30"/>
+                                <rect key="frame" x="34" y="57" width="254" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-RA-v53">
-                                <rect key="frame" x="34" y="98" width="254" height="30"/>
+                                <rect key="frame" x="34" y="110" width="254" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-SQ-GZp">
-                                <rect key="frame" x="76" y="171" width="170" height="30"/>
+                                <rect key="frame" x="76" y="183" width="170" height="30"/>
+                                <color key="backgroundColor" red="0.30384612039999997" green="0.84969600639999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="sign in"/>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AiI-hI-nck"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0h-z0-k5n">
-                                <rect key="frame" x="76" y="210" width="170" height="30"/>
+                                <rect key="frame" x="76" y="222" width="170" height="30"/>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="sign up"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zo-Ab-jMf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dot-dot-dotYK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZc-6y-Xdo">
+                                <rect key="frame" x="99" y="28" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -53,9 +61,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="304"/>
+            <point key="canvasLocation" x="276" y="304"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--InstagramYK-->
         <scene sceneID="uqC-It-Bqe">
             <objects>
                 <viewController storyboardIdentifier="FeedViewController" id="uZb-3W-a8a" customClass="FeedViewController" customModule="InstagramYK" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,10 +87,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KxB-Z5-SOq" customClass="PFImageView">
-                                                    <rect key="frame" x="18" y="8" width="285" height="142"/>
+                                                    <rect key="frame" x="18" y="8" width="285" height="172"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rj-fO-dAP">
-                                                    <rect key="frame" x="18" y="158" width="280" height="21"/>
+                                                    <rect key="frame" x="18" y="178" width="285" height="35"/>
+                                                    <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -99,7 +108,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h7a-Ed-cAG"/>
+                    <navigationItem key="navigationItem" title="InstagramYK" id="h7a-Ed-cAG"/>
                     <connections>
                         <outlet property="tableView" destination="7l8-q2-6Ju" id="VC9-Mg-ETa"/>
                     </connections>
@@ -108,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="2131" y="-339"/>
         </scene>
-        <!--Instagram View Controller-->
+        <!--CaptureYK-->
         <scene sceneID="kkZ-k8-PgB">
             <objects>
                 <viewController storyboardIdentifier="InstagramViewController" id="gb6-Wg-QKd" customClass="InstagramViewController" customModule="InstagramYK" customModuleProvider="target" sceneMemberID="viewController">
@@ -127,16 +136,16 @@
                                     <action selector="onLogOut:" destination="gb6-Wg-QKd" eventType="touchUpInside" id="DzL-Ws-kAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wca-kb-rAf">
-                                <rect key="frame" x="11" y="95" width="97" height="30"/>
-                                <state key="normal" title="Take a Picture"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wca-kb-rAf">
+                                <rect key="frame" x="40" y="98" width="33" height="24"/>
+                                <state key="normal" title="Take a Picture" image="iconmonstr-photo-camera-5-24"/>
                                 <connections>
                                     <action selector="onTakePicture:" destination="gb6-Wg-QKd" eventType="touchUpInside" id="YHg-vo-b5d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kw-Tx-Nof">
-                                <rect key="frame" x="183" y="95" width="117" height="30"/>
-                                <state key="normal" title="Choose a Picture"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kw-Tx-Nof">
+                                <rect key="frame" x="246" y="98" width="34" height="24"/>
+                                <state key="normal" title="Choose a Picture" image="iconmonstr-picture-6-24"/>
                                 <connections>
                                     <action selector="onChoosing:" destination="gb6-Wg-QKd" eventType="touchUpInside" id="zVa-OG-cGz"/>
                                 </connections>
@@ -146,21 +155,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4m-St-Zs1">
-                                <rect key="frame" x="137" y="459" width="47" height="30"/>
-                                <state key="normal" title="submit"/>
-                                <connections>
-                                    <action selector="onSubmit:" destination="gb6-Wg-QKd" eventType="touchUpInside" id="gdI-eh-Ocu"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zL4-Kh-evZ">
                                 <rect key="frame" x="40" y="133" width="240" height="242"/>
                                 <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4m-St-Zs1">
+                                <rect key="frame" x="93" y="461" width="134" height="30"/>
+                                <color key="backgroundColor" red="0.30384612039999997" green="0.84969600639999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSubmit:" destination="gb6-Wg-QKd" eventType="touchUpInside" id="gdI-eh-Ocu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bq3-jP-Z1b"/>
+                    <navigationItem key="navigationItem" title="CaptureYK" id="Bq3-jP-Z1b"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="captionTextField" destination="ccd-kf-Nzd" id="kOm-wX-fTy"/>
@@ -171,7 +184,7 @@
             </objects>
             <point key="canvasLocation" x="2061" y="304"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--SettingsYK-->
         <scene sceneID="TDC-ph-oHW">
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" id="ivT-MS-DmQ" customClass="SettingsViewController" customModule="InstagramYK" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,7 +206,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0UE-Qc-PTQ"/>
+                    <navigationItem key="navigationItem" title="SettingsYK" id="0UE-Qc-PTQ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSj-cS-fTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -219,11 +232,11 @@
             </objects>
             <point key="canvasLocation" x="857" y="304"/>
         </scene>
-        <!--Feed-->
+        <!--Home-->
         <scene sceneID="iKh-yF-AAa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6AL-Ty-ksf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" id="2Ry-oc-NfX"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="iconmonstr-home-7-24" id="2Ry-oc-NfX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="80z-fU-fGN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -238,11 +251,11 @@
             </objects>
             <point key="canvasLocation" x="1599" y="-339"/>
         </scene>
-        <!--Take-->
+        <!--capture-->
         <scene sceneID="4xW-kc-hkl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DEQ-9t-5NA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Take" id="qP0-nm-3Gg"/>
+                    <tabBarItem key="tabBarItem" title="capture" image="iconmonstr-photo-camera-9-24" id="qP0-nm-3Gg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D1c-fD-qxj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -261,7 +274,7 @@
         <scene sceneID="dM0-J1-aD5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N9M-x2-ZAt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="xaQ-fX-iuB"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="iconmonstr-gear-2-24" id="xaQ-fX-iuB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hry-Lj-WrH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -277,4 +290,11 @@
             <point key="canvasLocation" x="1529" y="1132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconmonstr-gear-2-24" width="24" height="24"/>
+        <image name="iconmonstr-home-7-24" width="24" height="24"/>
+        <image name="iconmonstr-photo-camera-5-24" width="24" height="24"/>
+        <image name="iconmonstr-photo-camera-9-24" width="24" height="24"/>
+        <image name="iconmonstr-picture-6-24" width="24" height="24"/>
+    </resources>
 </document>
